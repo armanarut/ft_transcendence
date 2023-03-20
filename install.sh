@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/bash
 
 # npm i --save-dev webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin mini-css-extract-plugin ts-loader
 # npm i react react-dom

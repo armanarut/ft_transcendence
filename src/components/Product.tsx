@@ -2,7 +2,12 @@ import React from 'react';
 
 const Product = () => {
     return (
-        <div>Product!</div>
+        <div
+            className="border py-2 px-4 rounded flex-col items-center mb-2"
+        >
+            Product!
+        
+        </div>
     )
 }
 
