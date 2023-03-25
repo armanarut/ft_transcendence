@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import Product from './components/Product';
+import Nikname from './components/Nikname';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-blue-600">
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+    <h1 className="container mx-6 mix-w-2xl pt-5 text-3xl font-bold text-blue-600">
+      <Nikname />
     </h1>
   );
 }
