@@ -1,14 +1,6 @@
-import React from 'react';
+import React from "react"
 
-const Nikname = () => {
-    return (
-        <div
-           className="text-1xl mx-11 font-semibold leading-7 text-gray-900"
-        >
-            Nikname
 
-        </div>
-    );
+export function Nikname() {
+    return <h1>Nikname</h1>
 }
-
-export default Nikname

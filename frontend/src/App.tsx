@@ -1,23 +1,27 @@
-import React from 'react';
-import './App.css';
-import Nikname from './components/Nikname';
-import Login from './components/Login';
-import aaa from "./images/pong.jpg"
+import React from "react";
+import "./App.css";
+import { Home } from './components/Home';
+import { Nikname } from "./components/Nikname";
+import { Login } from "./components/Login";
+import { Contacts } from "./components/Contacts";
+import { TheGame } from "./components/TheGame";
+import { Chanels } from "./components/Chanels";
+import { Routes, Route, BrowserRouter as Router} from "react-router-dom";
+
 
 function App() {
   return (
-    <h1 className="sm:text-center container pt-5 text-2xl font-bold">
-
-      <a href="#" className="px-10 text-1xl mx-14 font-semibold leading-7 text-gray-900">Login</a>
-      <a href="#" className="px-10 text-1xl mx-14 font-semibold leading-7 text-gray-900">Contacts</a>
-      <a href="#" className="px-10 text-1xl mx-14 font-semibold leading-7 text-gray-900">THE GAME</a>
-      <a href="#" className="px-10 text-1xl mx-14 font-semibold leading-7 text-gray-900">Chanels</a>
-      <a href="#" className="px-10 text-1xl mx-14 font-semibold leading-7 text-gray-900">Nikname</a>
-      <img className="px-28 pt-6 absalute left-0 top-0 w-full h-full z-10" src={aaa} alt="" height="600px" width="800px" ></img>
-    </h1>
-  );
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/thegame" element={<TheGame />} />
+            <Route path="/chanels" element={<Chanels />} />
+            <Route path="/nikname" element={<Nikname />} />
+          </Routes>
+       </Router>
+  )
 }
-
-// <Login/>
 
 export default App;
