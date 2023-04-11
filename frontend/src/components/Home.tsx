@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 import photo from '@SRC_DIR/assets/images/pong.jpg';
-import { Contacts } from './Contacts';
+import Contacts from './Contacts';
 
 
 const Home = () => {

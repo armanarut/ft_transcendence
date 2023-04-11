@@ -3,9 +3,9 @@ import "./App.css";
 import Home from './components/Home';
 import Profile from "./components/Profile";
 import Login from "./components/Login";
-import { Contacts } from "./components/Contacts";
-import { TheGame } from "./components/TheGame";
-import { Chanels } from "./components/Chanels";
+import Contacts from "./components/Contacts";
+import TheGame from "./components/TheGame";
+import Chanels from "./components/Chanels";
 import { Routes, Route, BrowserRouter as Router} from "react-router-dom";
 
 

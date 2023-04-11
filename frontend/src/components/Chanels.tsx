@@ -1,5 +1,7 @@
 import React from "react"
 
-export function Chanels() {
+const Chanels = () => {
     return <h1>Chanels</h1>
 }
+
+export default Chanels;
