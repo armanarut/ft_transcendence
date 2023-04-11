@@ -1,6 +1,8 @@
 import React from "react"
 
 
-export function Contacts() {
+const Contacts = () => {
     return <h1>Contacts</h1>
 }
+
+export default Contacts;
