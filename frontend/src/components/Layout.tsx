@@ -14,25 +14,25 @@ export const Layout = ({children}) => {
                         Home
                     </Link>
                     <Link
-                        to="./contacts"
+                        to="/contacts"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
                         Contacts
                     </Link>
                     <Link
-                        to="./thegame"
+                        to="/thegame"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
                         THE GAME
                     </Link>
                     <Link
-                        to="./chanels"
+                        to="/chanels"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
                         Chanels
                     </Link>
                     <Link
-                        to="./profile"
+                        to="/profile"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
                         Profile
