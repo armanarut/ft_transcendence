@@ -9,13 +9,13 @@ const Home = () => {
     <div>
         <div className="items-center justify-center relative backdrop-blur-md z-[668] min-w-full  sm:text-center container mx-auto pt-5 text-2xl font-bold flex">
             <Link
-                to="./login"
+                to="/login"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
                 Login
             </Link>
             <Link
-                to="./contacts"
+                to="/contacts"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
                 Contacts
@@ -27,13 +27,13 @@ const Home = () => {
                 THE GAME
             </Link>
             <Link
-                to="./chanels"
+                to="/chanels"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
                 Chanels
             </Link>
             <Link
-                to="./profile"
+                to="/profile"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
                 Profile
