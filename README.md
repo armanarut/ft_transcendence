@@ -1,1 +1,4 @@
 # ft_transcendence
+npm i -g @nestjs/cli
+nest new project-name
+npm run start
