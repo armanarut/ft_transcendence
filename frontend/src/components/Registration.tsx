@@ -34,10 +34,14 @@ const Login = () => {
                 <div className="bg-white/95 box-border h-62 w-62 p-8 border-1">
                 <div className="mt-1 w-full h-full max-w-md space-y-8">
                     <div>
-                    <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Sign in to your account</h2>
-                    <p className="mt-2 text-center text-sm text-gray-900">
-                        Or
-                        <Link to="/registration" className="font-medium text-gray-900 hover:text-indigo-500">   Registration</Link>
+                    <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Registration</h2>
+                    <p className=" mt-2 text-center text-sm text-gray-900 text-center"> Or
+                        <Link
+                            to="/login"
+                            className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
+                             >
+                             Login
+                        </Link>
                     </p>
                     </div>
                     <form 
@@ -52,6 +56,45 @@ const Login = () => {
                     <div className="-space-y-px rounded-md shadow-sm">
                         <div>
                         <label 
+                            htmlFor="first-name" 
+                            className="sr-only">First name
+                            </label>
+                        <input 
+                            id="first-name" 
+                            name="first" 
+                            type="first" 
+                            required className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                            placeholder="First name"
+                        />
+                        </div>
+                        <div>
+                        <label 
+                            htmlFor="last-name" 
+                            className="sr-only">Last name
+                            </label>
+                        <input 
+                            id="last-name" 
+                            name="last" 
+                            type="last" 
+                            required className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                            placeholder="Last name"
+                        />
+                        </div>
+                        <div>
+                        <label 
+                            htmlFor="user-name" 
+                            className="sr-only">Username
+                            </label>
+                        <input 
+                            id="user-name" 
+                            name="username" 
+                            type="username" 
+                            required className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                            placeholder="Username"
+                        />
+                        </div>
+                        <div>
+                        <label 
                             htmlFor="email-address" 
                             className="sr-only">Email address
                             </label>
@@ -61,6 +104,19 @@ const Login = () => {
                             type="email" 
                             required className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
                             placeholder="Email address"
+                        />
+                        </div>
+                        <div>
+                        <label 
+                            htmlFor="gen-der" 
+                            className="sr-only">Gender
+                            </label>
+                        <input 
+                            id="gen-der" 
+                            name="gender" 
+                            type="gender" 
+                            required className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                            placeholder="Gender"
                         />
                         </div>
                         <div>
@@ -79,25 +135,7 @@ const Login = () => {
                     </div>
 
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                        <input 
-                            id="remember-me" 
-                            name="remember-me" 
-                            type="checkbox" 
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                        />
-                        <label 
-                            htmlFor="remember-me" 
-                            className="ml-2 block text-sm text-gray-900">Remember me
-                            </label>
-                        </div>
 
-                        <div className="text-sm">
-                        <a 
-                            href="#" 
-                            className="font-medium hover:text-indigo-500 text-gray-900">Forgot your password?
-                            </a>
-                        </div>
                     </div>
 
                     <div>
@@ -116,7 +154,7 @@ const Login = () => {
                                 clip-rule="evenodd" />
                             </svg>
                         </span>
-                        Sign in
+                        Create your account
                         </button>
                     </div>
                     </form>

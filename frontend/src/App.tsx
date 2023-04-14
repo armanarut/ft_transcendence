@@ -3,6 +3,7 @@ import "./App.css";
 import Home from './components/Home';
 import Profile from "./components/Profile";
 import Login from "./components/Login";
+import Registration from "./components/Registration";
 import Contacts from "./components/Contacts";
 import TheGame from "./components/TheGame";
 import Chanels from "./components/Chanels";
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/registration" element={<Registration />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/thegame" element={<TheGame />} />
             <Route path="/chanels" element={<Chanels />} />
