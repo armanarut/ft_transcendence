@@ -6,15 +6,24 @@ import photo from '@SRC_DIR/assets/images/pong.jpg';
 import { instance } from "./utils"
 
 
+
 const AutoRootComponent = () => {
+    const [firstname, setFirstname] = useState('')
+    const [lasttname, setLastname] = useState('')
+    const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
+    const [gender, setGender] = useState('')
     const [password, setPassword] = useState('')
     const lacation = useLocation()
 
     const handleSubmit = async (e: { preventDefault: () => void }) => {
         e.preventDefault()
         const userData = {
+            firstname,
+            lasttname,
+            username,
             email,
+            gender,
             password
         }
         const user = await instance.post('/login', userData)
@@ -22,7 +31,7 @@ const AutoRootComponent = () => {
     }
 }
 
-const Login = () => {
+const Registration = () => {
     return (
    <Logo>
           <div className="">
@@ -38,9 +47,10 @@ const Login = () => {
                     <p className=" mt-2 text-center text-sm text-gray-900 text-center"> Or
                         <Link
                             to="/login"
-                            className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
+                            className="px-10 mx-28 font-medium text-gray-900 hover:text-indigo-500"
                              >
                              Login
+                             
                         </Link>
                     </p>
                     </div>
@@ -167,4 +177,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Registration;
