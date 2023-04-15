@@ -17,7 +17,8 @@ const AutoRootComponent = () => {
             email,
             password
         }
-        const user = await instance.post('/login', userData)
+        document.write("posting login....")
+        // const user = await instance.post('/login', userData)
         // console.log(user.data)
     }
 }
