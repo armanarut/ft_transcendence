@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 export const Logo = ({children}) => {
     return (
-        <div className="">
-                <div className="relative backdrop-blur-md z-[668] min-w-full  sm:text-center container mx-auto pt-5 text-2xl font-bold flex">
+        <div>
+            <div className="mb-8 relative backdrop-blur-md z-[668] min-w-full  sm:text-center container mx-auto pt-5 text-2xl font-bold flex">
                     <Link
                         to="../"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"

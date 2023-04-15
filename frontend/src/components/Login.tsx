@@ -18,18 +18,16 @@ const AutoRootComponent = () => {
             password
         }
         const user = await instance.post('/login', userData)
-        console.log(user.data)
+        // console.log(user.data)
     }
 }
 
 const Login = () => {
     return (
    <Logo>
-          <div className="">
-            <div style={{backgroundImage: `url(${photo})`,
-                         backgroundRepeat: "no-repeat",
-                         backgroundSize: "cover"}}
-                className="mt-8 w-full h-full flex min-h-full items-center justify-center px-4 py-52 sm:px-6 lg:px-8 ">
+            <div style={{backgroundImage: `url(${photo})`, height:"100% !important"}}
+                className="bg-cover bg-no-repeat bg-center flex justify-center"
+                >
                 
                 <div className="bg-white/95 box-border h-62 w-62 p-8 border-1">
                 <div className="mt-1 w-full h-full max-w-md space-y-8">
@@ -53,7 +51,7 @@ const Login = () => {
                         value="true"
                     />
                     <div className="-space-y-px rounded-md shadow-sm">
-                        <div>
+                        <div className="mb-1">
                         <label 
                             htmlFor="email-address" 
                             className="sr-only">Email address
@@ -62,11 +60,11 @@ const Login = () => {
                             id="email-address" 
                             name="email" 
                             type="email" 
-                            required className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                            required className="relative block w-full rounded border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
                             placeholder="Email address"
                         />
                         </div>
-                        <div>
+                        <div className="mb-1">
                         <label 
                             htmlFor="password" 
                             className="sr-only">Password
@@ -75,7 +73,7 @@ const Login = () => {
                             id="password" 
                             name="password" 
                             type="password" 
-                            required className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                            required className="relative block w-full rounded border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
                             placeholder="Password"
                         />
                         </div>
@@ -127,7 +125,6 @@ const Login = () => {
                 </div>
 
             </div>
-          </div>
     </Logo>
     );
 };
