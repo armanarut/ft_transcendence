@@ -6,7 +6,7 @@ import Contacts from './Contacts';
 
 const Home = () => {
     return (
-    <div>
+    <div >
         <div className="items-center justify-center relative backdrop-blur-md z-[668] min-w-full  sm:text-center container mx-auto pt-5 text-2xl font-bold flex">
             <Link
                 to="/login"
@@ -39,7 +39,7 @@ const Home = () => {
                 Profile
             </Link>
         </div>
-        <div className="flex">
+        <div style={{height:"100%"}} className="flex">
             <img
                 className="mt-8 w-full h-full"
                 src={photo}
