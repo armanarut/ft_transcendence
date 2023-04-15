@@ -1,16 +1,25 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller("/user")
+@Controller("game")
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get("/hello")
-  getHello(): string {
-    return this.appService.getHello();
+  // @Get("/hello")
+  // hello(@Req() request: Request): string {
+  //   return 'hello';//this.appService.getHello();
+  // }  
+  @Post()
+  create(@Body() userData: string): string {
+    console.log(userData);
+    return `Post request called with param #${userData}.`;
+  }
+  @Get()
+  gameGet(): string {
+    return `Get request.`;
   }
   @Get("/login")
-  getHello(): string {
+  login(): string {
     return this.appService.getHello();
   }
 }

@@ -1,6 +1,7 @@
 # ft_transcendence
 
 run site with:
+    npm install
     npm run dev
 
 
