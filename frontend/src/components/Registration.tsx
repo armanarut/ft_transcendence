@@ -34,13 +34,11 @@ const AutoRootComponent = () => {
 const Registration = () => {
     return (
    <Logo>
-            <div style={{backgroundImage: `url(${photo})`,
-                         backgroundRepeat: "no-repeat",
-                         backgroundSize: "cover"}}
-                className="flex min-h-full items-center justify-center px-4 py-52 sm:px-6 lg:px-8 ">
+            <div className="mt-8 flex items-center justify-center">
+                <div className='place-content-start w-65 h-50'>
                 
                 <div className="bg-white/95 box-border h-62 w-62 p-8 border-1">
-                <div className="mt-1 w-full h-full max-w-md space-y-8">
+                <div className=" mt-1 w-full h-full max-w-md space-y-8">
                     <div>
                     <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Registration</h2>
                     <p className=" mt-2 text-center text-sm text-gray-900 text-center px-10 mx-28"><a>or  </a>
@@ -166,7 +164,10 @@ const Registration = () => {
                     </form>
                 </div>
                 </div>
-
+                </div>
+                <div className='place-content-start w-65 h-50'>
+                    <img src="/assets/images/pong.jpg" alt="Image description"/>
+                </div>
             </div>
     </Logo>
     );
