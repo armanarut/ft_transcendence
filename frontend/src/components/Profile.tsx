@@ -10,8 +10,11 @@ const Profile = () => {
                 <img className="absolute w-full h-full object-cover mix-blend-overlay" src={photo} alt="/" />
 
             <div className="grid place-items-center h-screen">
-                <div className="rounded=3xl p-6 w-[450] text-white h-[250] bg-[#171822]">
-                    Hi
+                <div className="rounded-2xl p-16 w-[950px]  h-[550px] bg-white/95">
+                    <div className="flax justify-between items-center ">
+                        <img 
+                        src="/assets/images/man.png" className="rounded-full border-2 border-black border-solid w-20 h-20" alt=""/>
+                    </div>
                 </div>
             </div>
             </div>
