@@ -45,7 +45,7 @@ const Home = () => {
                 <div className="grid place-items-center h-screen inline-flax">
                     <Link   
                          to="/thegame"
-                         className="relative bg-black/80 hover:bg-gray-100 text-gray-100 font-bold py-5 px-16 rounded-2xl">
+                         className="relative bg-black/80 hover:bg-gray-500 text-gray-100 font-bold py-5 px-16 rounded-2xl">
                               The Game Play
                     </Link>
 
