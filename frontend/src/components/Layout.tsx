@@ -8,10 +8,10 @@ export const Layout = ({children}) => {
               <div>
                 <div className="items-center justify-center relative backdrop-blur-md z-[668] min-w-full  sm:text-center container mx-auto pt-5 text-2xl font-bold flex">
                     <Link
-                        to="../"
+                        to="/profile"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
-                        Home
+                        Profile
                     </Link>
                     <Link
                         to="/contacts"
@@ -20,10 +20,10 @@ export const Layout = ({children}) => {
                         Contacts
                     </Link>
                     <Link
-                        to="/thegame"
+                        to="/chat"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
-                        THE GAME
+                        Chat
                     </Link>
                     <Link
                         to="/chanels"
@@ -32,10 +32,10 @@ export const Layout = ({children}) => {
                         Chanels
                     </Link>
                     <Link
-                        to="/profile"
+                        to="/"
                         className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
                     >
-                        Profile
+                        SignOut
                     </Link>
                 </div>
               </div>

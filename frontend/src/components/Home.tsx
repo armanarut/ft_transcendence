@@ -9,10 +9,10 @@ const Home = () => {
     <div >
         <div className="items-center justify-center relative backdrop-blur-md z-[668] min-w-full  sm:text-center container mx-auto pt-5 text-2xl font-bold flex">
             <Link
-                to="/chat"
+                to="/profile"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
-                Chat
+                Profile
             </Link>
             <Link
                 to="/contacts"
@@ -21,10 +21,10 @@ const Home = () => {
                 Contacts
             </Link>
             <Link
-                to="./thegame"
+                to="./chat"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
-                THE GAME
+                Chat
             </Link>
             <Link
                 to="/chanels"
@@ -33,18 +33,23 @@ const Home = () => {
                 Chanels
             </Link>
             <Link
-                to="/profile"
+                to="/"
                 className="px-10 text-1xl mx-14 font-semibold leading-7 text-black-900"
             >
-                Profile
+                SignOut
             </Link>
         </div>
-        <div style={{height:"100%"}} className="flex">
-            <img
-                className="mt-8 w-full h-full"
-                src={photo}
-                alt="layer"
-            />
+        <div className="mt-8 relative w-full h-screen">
+             <img className="absolute w-full h-full object-cover mix-blend-overlay" src={photo} alt="/" />
+
+                <div className="grid place-items-center h-screen inline-flax">
+                    <Link   
+                         to="/thegame"
+                         className="relative bg-black/80 hover:bg-gray-100 text-gray-100 font-bold py-5 px-16 rounded-2xl">
+                              The Game Play
+                    </Link>
+
+            </div>
         </div>
     </div>);
 };
